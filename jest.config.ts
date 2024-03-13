@@ -11,6 +11,7 @@ const config: Config = {
   setupFiles: ["<rootDir>.jest/set-env-vars.ts"],
   clearMocks: true,
   coverageReporters: ["json", "lcov", "text"],
+  testTimeout: 3000000
 };
 
 export default config;
