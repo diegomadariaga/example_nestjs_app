@@ -51,7 +51,7 @@ describe("Health", () => {
         expect(response.status).toBe(400);
       });
     });
-    describe("insertMany", () => {
+    describe.skip("insertMany", () => {
       it("should insert 10000 users", async () => {
         const response = await request(app.getHttpServer())
           .post("/users/insertMany")

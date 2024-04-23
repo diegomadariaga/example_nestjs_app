@@ -36,7 +36,7 @@ export class UsersService {
     return await this.usersRepository.save(user);
   }
   async insertMany() {
-    for (let i = 0; i < 10000; i++) {
+    for (let i = 0; i < 100; i++) {
       const users = [];
       for (let j = 0; j < 100; j++) {
         const user = new User();
