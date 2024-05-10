@@ -34,7 +34,8 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix",
     "build:clean": "rimraf dist; exit 0",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "docker:dev": "docker-compose build && docker-compose up my-service-dev"
   },
   "dependencies": {
     "@golevelup/ts-jest": "^0.4.0",
